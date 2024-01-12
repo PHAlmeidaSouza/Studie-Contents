@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author Pedro
- *
- */
-module SaidaDeDados {
-}
