@@ -19,7 +19,7 @@ public class Main {
             System.out.println("Dados da " + (i+1) + "a pessoa:");
             System.out.print("Nome: ");
             String name = sc.nextLine();
-            System.out.print("Idade: ");
+            System.out.print(   "Idade: ");
             int idade = sc.nextInt();
             vect[i] = new Pessoa(name, idade);
         }
