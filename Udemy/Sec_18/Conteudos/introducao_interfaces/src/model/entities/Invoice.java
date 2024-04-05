@@ -1,6 +1,7 @@
 package model.entities;
 
 public class Invoice {
+
     private Double basicPayment;
     private Double tax;
 
@@ -28,7 +29,7 @@ public class Invoice {
         this.tax = tax;
     }
 
-    public double getTotalPayment() {
+    public Double getTotalPayment() {
         return getBasicPayment() + getTax();
     }
 }
