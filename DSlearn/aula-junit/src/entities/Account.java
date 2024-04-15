@@ -1,9 +1,7 @@
 package entities;
 
 public class Account {
-
-    private static Double DEPOSIT_FEE_PERCENTAGE = 0.02;
-
+    public static double DEPOSIT_FEE_PERCENTAGE = 0.02;
     private Long id;
     private Double balance;
 
@@ -27,21 +25,21 @@ public class Account {
         return balance;
     }
 
-    public void deposit(Double amount) {
+    public void deposit(double amount) {
         if (amount > 0) {
             amount -= amount * DEPOSIT_FEE_PERCENTAGE;
             balance += amount;
         }
     }
 
-    public void withDraw(Double amount) {
+    public void withDraw(double amount) {
         if (amount > balance) {
             throw new IllegalArgumentException();
         }
         balance -= amount;
     }
 
-    public Double fullWithDraw() {
+    public double fullWithDraw() {
         double aux = balance;
         balance = 0.0;
         return aux;
